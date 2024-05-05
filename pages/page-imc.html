@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC-Calculator</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body id="body-imc_calculator">
+    <div class="container-imc">
+        <div id="title-imc">
+            <h1>IMC Calculator</h1>
+        </div>
+        <div id="content-imc">
+            <div id="content-calculo">
+                <input class="value" type="number" name="" id="valueP" placeholder="Informe o peso: KG">
+                <input class="value" type="number" name="" id="valueA" placeholder="Informe a altura: M">
+                <input class="value" id="btnC" type="button" onclick="calcular()" value="Calcular">
+                <div class="value" id="res">
+                    <p>IMC</p>
+                </div>
+            </div>
+            <div id="content-animation">
+                <div id="txtResult">
+                    <p id="result">Seu IMC estará normal se for maior que 18 e menor que 25!</p>
+                </div>
+                <div id="img-animation">
+                    <img src="../assets/images/coelho-imc.png" alt="" height="400px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

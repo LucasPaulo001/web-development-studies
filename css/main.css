@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+/*Página principal*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(78, 15, 166);
+    color: white;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr 250px;
+    align-items: center;
+    font-family: "Ubuntu Sans";
+
+}
+#title{
+    text-align: center;
+    padding-bottom: 82px;
+}
+#content > #content-imc, #content-calculator{
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: 1fr;
+}
+#content-imc{
+    padding: 0 0 80px;
+}
+.txt-btn-content > #txt{
+    padding: 0px 0px 20px;
+    width: 80%;
+}
+#txt > h2{
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+.img-content{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+.img-content > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+.btn{
+    width: 10%;
+    height: 25px;
+    border-radius: 5px;
+    border: rgb(201, 163, 255) 1px solid;
+    background-image: linear-gradient(to left, rgb(78, 15, 166), rgb(5, 151, 242));
+    cursor: pointer;
+}
+.img-low > img{
+    width: 100%;
+    background-position: bottom;
+}
+
+/*Página IMC Calculator*/
+
+#body-imc_calculator{
+    background-color: black;
+}
+.container-imc{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr;
+    align-items: center;
+    font-family: "Ubuntu Sans";
+}
+
+#title-imc{
+    text-align: center;
+    padding: 30px;
+}
+
+#content-imc{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#content-calculo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-calculo > input{
+    width: 50%;
+    height: 10%;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    text-indent: 15px;
+}
+.value:not(:first-child){
+    margin-top: 35px;
+}
+
+#res{
+    height: 100px;
+    width: 50%;
+    background-color: rgb(71, 71, 71);
+    border-radius: 15px;
+    text-indent: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px white solid;
+}
+#btnC{
+    cursor: pointer;
+    border: none;
+}
+#btnC:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+#txtResult{
+    height: 100px;
+    width: 50%;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#img-animation{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 750px){
+    #content > #content-imc, #content-calculator{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+    .txt-btn-content > #txt{
+        margin: auto;
+    }
+    .container{
+        grid-template-rows: 20% 1fr;
+    }
+    .btn-content{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 900px){
+    #content-imc{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .value:not(:first-child){
+        margin-top: 10px;
+    }
+    #content-animation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+    }
+    #content-calculo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #img-animation, img{
+        height: 150px;
+    }
+    #img-animation{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    #content-calculo > input{
+        width: 50%;
+        height: 20%;
+    }
+    #txtResult{
+        font-size: 2vh;
+    }
+}
