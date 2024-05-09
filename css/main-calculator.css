@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+.calculator{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-family: "Ubuntu Sans";
+}
+#calculadora{
+    background-color: black;
+    width: 250px;
+    height: 320px;
+    border-radius: 20px;
+}
+#bts{
+    height: 90%;
+    width: 87%;
+    margin: auto;
+}
+#res{
+    width: 97%;
+    height: 40px;
+    text-align: right;
+    font-size: 28px;
+    background-color: black;
+    color: white;
+}
+.bt{
+   height: 15%;
+   border-radius: 65%;
+   width: 22%;
+   background-color: rgb(44, 44, 44);
+   color: white;
+   margin: auto;
+   font-size: 25px;
+   margin-top: 10px;
+   border: none;
+}
+.bt:hover{
+    background-color: rgb(121, 121, 121);
+}
+.bt-color{
+    background-color: orange
+}
+.bt-colorS{
+    background-color: silver;
+    color: black;
+}
+.bt0{
+    width: 100px;
+    border-radius: 40px;
+    text-align: start;
+}

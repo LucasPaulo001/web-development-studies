@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/main-calculator.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Calculator</h1>
+    </div>
+    <div class="calculator">
+        <div id="calculadora">
+            <input type="text" value="" id="res">
+            <div id="bts">
+                <input type="button" value="%" class="bt bt-colorS" onclick="inserir('%')">
+                <input type="button" value="CE" class="bt bt-colorS" onclick="clean()">
+                <input type="button" value="C" class="bt bt-colorS" onclick="delet()">
+                <input type="button" value="/" class="bt bt-color" onclick="inserir('/')">
+                <br>
+                <input type="button" value="7" class="bt" onclick="inserir('7')">
+                <input type="button" value="8" class="bt" onclick="inserir('8')">
+                <input type="button" value="9" class="bt" onclick="inserir('9')">
+                <input type="button" value="*" class="bt bt-color" onclick="inserir('*')">
+                <br>
+                <input type="button" value="4" class="bt" onclick="inserir('4')">
+                <input type="button" value="5" class="bt" onclick="inserir('5')">
+                <input type="button" value="6" class="bt" onclick="inserir('6')">
+                <input type="button" value="-" class="bt bt-color" onclick="inserir('-')">
+                <br>
+                <input type="button" value="1" class="bt" onclick="inserir('1')">
+                <input type="button" value="2" class="bt" onclick="inserir('2')">
+                <input type="button" value="3" class="bt" onclick="inserir('3')">
+                <input type="button" value="+" class="bt bt-color" onclick="inserir('+')">
+                <br>
+                <input type="button" value="0" class="bt bt0" onclick="inserir('0')">
+                <input type="button" value="," class="bt" onclick="inserir(',')">
+                <input type="button" value="=" class="bt bt-color" id="btnc" onclick="resultado()">
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main-Calculator.js"></script>
+</body>
+
+</html>
